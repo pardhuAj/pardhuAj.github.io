@@ -21,7 +21,7 @@ repository               : "pardhuAj/pardhuAj.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "Pardhu_profile_cropped.JPG"
   name             : "Pardha Sai Krishna"
   pronouns         : # example: "she/her"  
   bio              : "PhD Candidate at Clemson University"
@@ -32,11 +32,11 @@ author:
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AH8HC4wMlHGvzY7gQg5mHKOGqi-D4KdhofqeWTldTukNF5bhBzGTv0kA1rvphqH6KFkiNTOwT1pZslg9c74ybqJJbYLr&user=SiC7uKAAAAAJ"
   impactstory      : # URL
   orcid            : "http://orcid.org/yourorcidurl"
   semantic         : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   researchgate     : # URL
 
   # Repositories and software development
