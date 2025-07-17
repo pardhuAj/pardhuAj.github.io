@@ -1,1 +1,1 @@
-I am Pardha Sai Krishna Ala, a Ph.D. student at Clemson University's Automotive Engineering department. My interests lie in the field of state estimation, parameter identification, behavioral identification, and reinforcement learning.
+https://pardhuaj.github.io/
