@@ -5,32 +5,86 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
+{% if site.author.googlescholar %}
+<p>
+  View all publications on
+  <a href="{{ site.author.googlescholar }}">Google Scholar</a>.
+</p>
 {% endif %}
 
+<h2>2025</h2>
 
+<article>
+  <h3>Physics constrained learning of stochastic characteristics</h3>
 
+  <p>
+    <strong>Pardha Sai Krishna Ala</strong>, Ameya Salvi,
+    Venkat Krovi, and Matthias Schmid.
+  </p>
+
+  <p>
+    <em>IFAC-PapersOnLine</em>, Volume 59, Issue 30,
+    pages 383–388, 2025.
+  </p>
+
+  <p>
+    A learning-based approach to identifying process and measurement
+    noise characteristics for adaptive filtering and vehicle state estimation.
+  </p>
+
+  <p>
+    <a class="btn btn--primary"
+       href="https://doi.org/10.1016/j.ifacol.2025.12.267">
+      Published Paper
+    </a>
+    <a class="btn"
+       href="https://arxiv.org/abs/2507.12661">
+      Preprint
+    </a>
+    <a class="btn"
+       href="https://github.com/pardhuAj/Adaptive_Estimation">
+      GitHub Code
+    </a>
+  </p>
+</article>
+
+<hr>
+
+<article>
+  <h3>
+    Online identification of skidding modes with interactive
+    multiple model estimation
+  </h3>
+
+  <p>
+    Ameya Salvi, <strong>Pardha Sai Krishna Ala</strong>,
+    Jonathon M. Smereka, Mark Brudnak, David Gorsich,
+    Matthias Schmid, and Venkat Krovi.
+  </p>
+
+  <p>
+    <em>
+      2025 IEEE International Conference on Robotics and Automation
+      (ICRA)
+    </em>, 2025.
+  </p>
+
+  <p>
+    A multiple-model filtering framework that probabilistically
+    identifies operating modes of skid-steered mobile robots
+    affected by terrain traversal and loss of wheel traction.
+  </p>
+
+  <p>
+    <a class="btn btn--primary"
+       href="https://arxiv.org/abs/2409.20554">
+      View Preprint
+    </a>
+    <a class="btn"
+       href="https://github.com/pardhuAj/2025_ICRA_HuskyIMM">
+      GitHub Code
+    </a>
+  </p>
+</article>
