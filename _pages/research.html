@@ -1,0 +1,70 @@
+---
+layout: archive
+title: "Research"
+permalink: /research/
+author_profile: true
+---
+
+{% include base_path %}
+
+<style>
+  .research-entry { margin-bottom: 2.5rem; }
+  .research-entry figure { margin: 1.25rem 0; }
+  .research-entry img { display: block; width: 100%; height: auto; max-width: 760px; margin: 0 auto; border: 1px solid #ddd; border-radius: 6px; }
+  .research-entry figcaption { margin-top: 0.5rem; font-size: 0.85em; text-align: center; }
+  .research-entry .research-links { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+</style>
+
+<section class="research-entry" aria-labelledby="adaptive-estimation">
+  <h2 id="adaptive-estimation">Physics-Constrained Adaptive State Estimation</h2>
+  <p><em>Physics constrained learning of stochastic characteristics</em> — IFAC-PapersOnLine, 2025.</p>
+  <p>
+    This research investigates learning-based prediction of process and measurement noise
+    covariances for adaptive Kalman filtering. The approach combines measurement and
+    innovation histories with statistical constraints based on innovation autocorrelation
+    and normalized innovation squared to assess noise characteristics. Applied to vehicle
+    sideslip angle and yaw-rate estimation, the study compares training objectives and
+    examines their influence on estimation accuracy under model uncertainty.
+  </p>
+  <figure>
+    <a href="{{ base_path }}/images/research/adaptive-estimation-framework.jpg" aria-label="Open the adaptive estimation framework figure at full size">
+      <img src="{{ base_path }}/images/research/adaptive-estimation-framework.jpg"
+           alt="Adaptive estimation framework linking the plant, measurements, Kalman filter, innovation history, and learned noise covariance predictor."
+           width="3340" height="1774" loading="lazy">
+    </a>
+    <figcaption>Learning-based noise covariance prediction within a recursive state estimation framework.</figcaption>
+  </figure>
+  <p class="research-links">
+    <a class="btn btn--primary" href="https://doi.org/10.1016/j.ifacol.2025.12.267">Published Paper</a>
+    <a class="btn" href="https://arxiv.org/abs/2507.12661">Preprint</a>
+    <a class="btn" href="https://github.com/pardhuAj/Adaptive_Estimation">GitHub Code</a>
+  </p>
+</section>
+
+<hr>
+
+<section class="research-entry" aria-labelledby="skidding-modes">
+  <h2 id="skidding-modes">Online Identification of Skidding Modes</h2>
+  <p><em>Online identification of skidding modes with interactive multiple model estimation</em> — ICRA 2025.</p>
+  <p>
+    This research develops an interactive multiple model (IMM) filtering framework to
+    identify the operating modes of skid-steered mobile robots as wheel-ground
+    interactions change. A bank of motion models represents predefined behaviors, and
+    measurement updates determine the probability of each mode. Evaluated using a Husky
+    mobile robot, the framework tracks changes associated with skidding and loss of
+    traction, supporting motion estimation and providing information relevant to
+    robot navigation and control.
+  </p>
+  <figure>
+    <a href="{{ base_path }}/images/research/husky-imm-mode-probabilities.jpg" aria-label="Open the IMM mode probability figure at full size">
+      <img src="{{ base_path }}/images/research/husky-imm-mode-probabilities.jpg"
+           alt="Four model probabilities over time, showing changes in the dominant motion model."
+           width="700" height="525" loading="lazy" style="max-width:700px">
+    </a>
+    <figcaption>Example model probabilities illustrating changes in the dominant motion mode.</figcaption>
+  </figure>
+  <p class="research-links">
+    <a class="btn btn--primary" href="https://arxiv.org/abs/2409.20554">View Preprint</a>
+    <a class="btn" href="https://github.com/pardhuAj/2025_ICRA_HuskyIMM">GitHub Code</a>
+  </p>
+</section>
